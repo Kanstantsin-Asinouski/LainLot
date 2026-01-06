@@ -1,0 +1,121 @@
+.menuToggle {
+  position: fixed;
+  top: 13px;
+  left: 15px;
+  z-index: 1003;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuToggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: var(--sidebar-width);
+  height: calc(100vh - 60px);
+  background-color: var(--sidebar-bg);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  z-index: 1100;
+  transition: left 0.3s ease;
+}
+
+.open {
+  left: 0;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--sidebar-text-color);
+  background-color: var(--sidebar-header-bg);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 6px 10px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.searchWrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--sidebar-text-color);
+}
+
+.tablesListColumn {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tableButton {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--sidebar-text-color);
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.tableButton:hover {
+  background-color: var(--btn-hover-bg);
+  color: white;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1099;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 85%;
+  }
+
+  .header {
+    font-size: 1.1rem;
+  }
+}

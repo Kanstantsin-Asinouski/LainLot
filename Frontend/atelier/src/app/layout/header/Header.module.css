@@ -1,0 +1,8 @@
+.headerSection {
+  width: 100%;
+  display: flex;
+}
+
+.containtMain {
+  display: flex;
+}

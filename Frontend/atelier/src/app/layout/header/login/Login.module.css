@@ -1,0 +1,31 @@
+.loginMenu {
+  display: flex;
+  text-align: right;
+  float: right;
+}
+
+.loginMenu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.loginMenu li {
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.loginMenu li a {
+  color: #ffffff;
+}
+
+.loginMenu li a:hover {
+  color: #f26522;
+}
+
+.padding10 {
+  padding-left: 10px;
+}

@@ -1,0 +1,6 @@
+.main {
+  flex: 1;
+  margin: 0px 30px;
+  display: inline-block;
+  order: 2;
+}

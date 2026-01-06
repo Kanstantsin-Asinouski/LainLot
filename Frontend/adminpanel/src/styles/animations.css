@@ -1,0 +1,31 @@
+.stroke-animation {
+  li {
+    a,
+    a:after,
+    a:before {
+      transition: all 0.4s;
+    }
+    a {
+      position: relative;
+    }
+    a:hover {
+      color: var(--hover-link-color);
+    }
+    a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #345db6;
+      height: 1px;
+    }
+    a:hover:after {
+      width: 100%;
+      background: var(--hover-link-color);
+    }
+  }
+}

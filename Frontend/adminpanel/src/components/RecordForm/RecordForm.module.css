@@ -1,0 +1,11 @@
+.addPhoto > * {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.containerForm {
+  width: 100%;
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+}

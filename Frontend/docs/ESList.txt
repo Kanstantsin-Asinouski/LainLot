@@ -1,0 +1,8 @@
+npx eslint . | npm run lint
+npx eslint . --fix | npm run lint:fix
+
+npx prettier --check . | npm run format:check
+npx prettier --write . | npm run format
+
+npx eslint . --fix && npx prettier --write .
+

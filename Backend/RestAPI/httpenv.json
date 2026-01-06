@@ -1,0 +1,14 @@
+﻿{
+  "IIS": {
+    "RestAPI_HostAddress": "http://localhost:8040/api/v1/Database/",
+    "Credentials": "Basic S2FuYXNpOmFkbWlu"
+  },
+  "local": {
+    "RestAPI_HostAddress": "http://localhost:5285/api/v1/Database/",
+    "Credentials": "Basic S2FuYXNpOmFkbWlu"
+  },
+  "prod": {
+    "RestAPI_HostAddress": "https://lainlot.com",
+    "Credentials": "Basic S2FuYXNpOmFkbWlu"
+  }
+}

@@ -1,0 +1,22 @@
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+footer {
+  position: relative;
+  z-index: 500;
+}

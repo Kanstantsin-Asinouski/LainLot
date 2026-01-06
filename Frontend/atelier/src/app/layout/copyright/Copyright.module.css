@@ -1,0 +1,25 @@
+.copyrightSection {
+  width: 100%;
+  float: left;
+  background-color: #252525;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.copyrightText {
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.copyrightText a {
+  color: #ffffff;
+}
+
+.copyrightText a:hover {
+  color: #f26522;
+}
